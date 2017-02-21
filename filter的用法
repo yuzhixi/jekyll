@@ -1,0 +1,21 @@
+.filter( selector )
+  selector
+  类型: Selector
+  一个用于匹配元素的选择器字符串。
+  添加的版本: 1.0.filter( function(index) )
+function(index)
+  类型: Function()
+  一个函数用作测试集合中的每个元素。this 是当前DOM元素。
+  添加的版本: 1.4.filter( element )
+  允许我们使用一个函数，而不是一个选择器来过滤元素，对于每个元素，如果函数返回true ，该元素将被包含在筛选集合中;否则，将被排除在外。
+  eg:
+  $('li').filter(function(index) {
+  return $('strong', this).length == 1;
+}).css('background-color', 'red');
+element
+  类型: Element
+  一个或多个DOM元素来匹配当前元素集合。
+  添加的版本: 1.4.filter( jQuery object )
+jQuery object
+  类型: Object
+  现有jQuery对象，用于进一步筛选当前元素集合。
