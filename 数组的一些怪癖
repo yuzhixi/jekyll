@@ -1,0 +1,14 @@
+  特点：
+    1 数组是一组数据的线性集合
+    2 数组的长度可以随时修改
+  方法：
+    push，pop,shift,unshift,splice,slice,concat,join,reverse
+  属性：
+    length：
+      显式修改  arr.length = number;
+        1 当数组的长度被设置得比实际长度更大时，数组的状态不会发生任何变化，仅仅length变大
+        2 当数组的长度设置得更小时，索引大于等于length的元素的值会丢失，且后面无法恢复。
+      隐式修改  arr[index] = number;
+        当赋值时，index大于等于arr的实际长度，即arr[index]不存在时，arr的length被隐式的修改为index+1.
+    
+ 
